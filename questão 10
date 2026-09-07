@@ -1,0 +1,18 @@
+// Atividade por: Isaias Ramos Batista
+
+A. Histórico do navegador — pilha
+As páginas visitadas são empilhadas. Ao clicar em “voltar”, a página mais recentemente acessada é removida primeiro,
+seguindo o princípio LIFO (Last In, First Out).
+
+B. Pessoas aguardando atendimento — fila
+Normalmente, a primeira pessoa a chegar é a primeira a ser atendida, seguindo o princípio FIFO (First In, First Out).
+
+C. Catálogo de produtos — lista
+Uma lista é adequada para armazenar vários produtos em sequência, permitindo percorrê-los, adicionar ou remover itens e,
+dependendo da implementação, acessá-los por posição.
+
+D. Função “desfazer” de um editor de texto — pilha
+Cada ação realizada é colocada em uma pilha. Ao usar “desfazer”, a ação mais recente é retirada primeiro, seguindo o princípio LIFO.
+
+E. Playlist de músicas acessada por posição — lista
+Como as músicas precisam ser acessadas por sua posição — por exemplo, a música 1, 5 ou 10 —, uma lista é a estrutura mais adequada. 
