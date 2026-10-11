@@ -1,0 +1,341 @@
+:root {
+    --primary-color: #1b5e20;
+    --secondary-color: #2e7d32;
+    --accent-color: #fbc02d;
+    --bg-light: #f4f6f5;
+    --text-dark: #2c3e50;
+    --white: #ffffff;
+    --gray-border: #cbd5e1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+.site-header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.ifc-tag {
+    background-color: var(--accent-color);
+    color: #000;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 1.1rem;
+}
+
+.site-header h1 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.site-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.site-nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.site-nav a:hover {
+    color: var(--accent-color);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background: var(--white);
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid var(--gray-border);
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    flex: 1;
+    min-width: 280px;
+}
+
+.badge {
+    background-color: #e8f5e9;
+    color: var(--primary-color);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.hero-content h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.hero-image {
+    flex: 1;
+    min-width: 280px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.features-section {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid var(--gray-border);
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.features-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.features-list li {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.table-section {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid var(--gray-border);
+    margin-bottom: 30px;
+}
+
+.section-desc {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.curso-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.curso-table th, .curso-table td {
+    padding: 12px 15px;
+    border: 1px solid var(--gray-border);
+}
+
+.curso-table th {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.curso-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.form-section {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid var(--gray-border);
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-box {
+    width: 100%;
+    max-width: 600px;
+}
+
+.form-box h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.form-box p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--gray-border);
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: var(--accent-color);
+    color: #000;
+    width: 100%;
+}
+
+.btn-secondary:hover {
+    background-color: #f57f17;
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.api-section {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid var(--gray-border);
+    margin-bottom: 30px;
+}
+
+.api-controls {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.api-controls input {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+    border: 1px solid var(--gray-border);
+    border-radius: 6px;
+}
+
+.api-resultado-box {
+    background: #f8fafc;
+    border: 1px dashed var(--gray-border);
+    padding: 20px;
+    border-radius: 6px;
+    min-height: 100px;
+}
+
+.placeholder-text {
+    color: #888;
+    font-style: italic;
+}
+
+.site-footer {
+    background-color: #1e293b;
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+.site-footer p + p {
+    margin-top: 5px;
+    color: #94a3b8;
+}
+
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .site-nav ul {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .api-controls {
+        flex-direction: column;
+    }
+}

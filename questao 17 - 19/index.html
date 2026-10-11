@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Técnico em Informática | IFC Campus Camboriú</title>
+    <link rel="stylesheet" href="assets/main.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="logo-container">
+            <span class="ifc-tag">IFC</span>
+            <h1>Instituto Federal Catarinense</h1>
+        </div>
+
+        <nav class="site-nav">
+            <ul>
+                <li><a href="#sobre">O Curso</a></li>
+                <li><a href="#matriz">Matriz Curricular</a></li>
+                <li><a href="#inscricao">Inscrição</a></li>
+                <li><a href="#consulta-api">Consulta Pública</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção de Apresentação / Hero -->
+        <section id="sobre" class="hero-section">
+            <div class="hero-content">
+                <span class="badge">Campus Camboriú</span>
+                <h2>Curso Técnico em Informática Integrado ao Ensino Médio</h2>
+                <p>
+                    O <strong>Curso Técnico em Informática</strong> do <em>IFC Campus Camboriú</em> oferece uma formação sólida que une o Ensino Médio regular a uma qualificação profissional tecnológica de excelência, totalmente gratuita e voltada para o mercado de inovação e desenvolvimento de sistemas.
+                </p>
+                <a href="#inscricao" class="btn btn-primary">Inscreva-se Já</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80" alt="Estudantes em laboratório de informática no IFC">
+            </div>
+        </section>
+
+        <section class="features-section">
+            <h3 class="section-title">Por que escolher o IFC Camboriú?</h3>
+            <ul class="features-list">
+                <li><strong>Ensino Público e Gratuito:</strong> Educação federal de excelência sem mensalidades.</li>
+                <li><strong>Infraestrutura Completa:</strong> Laboratórios de informática modernos e atualizados.</li>
+                <li><strong>Corpo Docente Qualificado:</strong> Professores mestres e doutores dedicados à pesquisa e ensino.</li>
+                <li><strong>Oportunidades:</strong> Projetos de extensão, bolsas de pesquisa e forte inserção no arranjo produtivo local.</li>
+            </ul>
+        </section>
+
+        <section id="matriz" class="table-section">
+            <h3 class="section-title">Estrutura e Matriz Curricular</h3>
+            <p class="section-desc">Confira um panorama das áreas abordadas ao longo dos anos do curso:</p>
+            
+            <div class="table-container">
+                <table class="curso-table">
+                    <thead>
+                        <tr>
+                            <th>Módulo / Ano</th>
+                            <th>Área de Conhecimento</th>
+                            <th>Principais Disciplinas</th>
+                            <th>Carga Horária Estimada</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1ª Série</strong></td>
+                            <td>Formação Básica & Introdução</td>
+                            <td>Matemática, Português, Fundamentos de Hardware e Lógica de Programação</td>
+                            <td>800h</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2ª Série</strong></td>
+                            <td>Desenvolvimento & Redes</td>
+                            <td>Programação Orientada a Objetos, Banco de Dados e Redes de Computadores</td>
+                            <td>800h</td>
+                        </tr>
+                        <tr>
+                            <td><strong>3ª Série</strong></td>
+                            <td>Avançado & Mercado</td>
+                            <td>Desenvolvimento Web/Mobile, Engenharia de Software e Estágio Supervisionado</td>
+                            <td>800h + Estágio</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="inscricao" class="form-section">
+            <div class="form-box">
+                <h3>Demonstre Interesse / Processo Seletivo</h3>
+                <p>Preencha os dados abaixo para receber avisos sobre os editais do IFC Camboriú:</p>
+                
+                <form id="form-contato">
+                    <div class="input-group">
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">E-mail de Contato:</label>
+                        <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="modalidade">Forma de Ingreso de Interesse:</label>
+                        <select id="modalidade" name="modalidade">
+                            <option value="integrado">Técnico Integrado ao Ensino Médio</option>
+                            <option value="subsequente">Técnico Subsequente (Pós-Ensino Médio)</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-secondary">Cadastrar Interesse</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="consulta-api" class="api-section">
+            <div class="api-box">
+                <h3 class="section-title">Consulta de Países (API Pública)</h3>
+                <p>Consulte dados geográficos e econômicos em tempo real consumindo a <em>RestCountries API</em>:</p>
+                
+                <div class="api-controls">
+                    <input type="text" id="pais-input" placeholder="Ex: Brazil, Canada, Japan..." value="Brazil">
+                    <button id="btn-buscar-api" class="btn btn-primary">Consultar API</button>
+                </div>
+
+                <div id="api-resultado" class="api-resultado-box">
+                    <p class="placeholder-text">Os dados da requisição GET aparecerão aqui...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Instituto Federal Catarinense (IFC) – Campus Camboriú.</p>
+        <p>Desenvolvido para fins educacionais de Programação Web.</p>
+    </footer>
+
+    <script src="assets/main.js"></script>
+</body>
+</html>
