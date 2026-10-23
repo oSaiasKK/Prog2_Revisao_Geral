@@ -1,0 +1,13 @@
+{
+  "name": "sistema-web-cliente-servidor",
+  "version": "1.0.0",
+  "description": "Sistema de Gerenciamento de Tarefas - Cliente-Servidor com Node.js, SQLite, OO e Fila",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6"
+  }
+}
